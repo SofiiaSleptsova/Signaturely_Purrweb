@@ -189,3 +189,109 @@
 
 ## Баг-репорты
 
+<details>
+<summary> ID: SIGN-1 </summary> 
+
+### Option Share: В попапе Share this Document прокрутка наверх становится невозможным при добавлении более 8 зрителей [SIGN-1](https://slepsovasonya.youtrack.cloud/issue/SIGN-1/Option-Share-V-popape-Share-this-Document-prokrutka-naverh-stanovitsya-nevozmozhnym-pri-dobavlenii-bolee-8-zritelej)
+
+**Предусловия:**  
+1. Открыть сайт https://staging.d2twwklgqmrfet.amplifyapp.com/  
+2. Зарегистрироваться как пользователь на сайте  
+3. Войти в личный кабинет пользователя  
+4. Отправить на подпись документ через вкладку Sign  
+5. Получатель должен подписать документ через вкладку Documents, тег Received  
+6. Нажать на вкладку Documents  
+
+**Шаги воспроизведения:**  
+1. У документа со статусом Completed нажать на кнопку Option на странице Documents  
+2. Нажать на кнопку Share из раскрывающего списка Option  
+3. В поле ввода test@signaturely.com вести валидный почтовый адрес в попапе Share this Document  
+4. Нажать на поле Add Viewer в попапе Share this Document  
+5. Повторить шаг 3 и 4 более 8 раз  
+
+**Ожидаемый результат:**   
+При добавлении более 8 зрителей в попапе Share this Documents, прокрутка наверх возможна   
+**Фактический результат:**  
+При добавлении более 8 зрителей в попапе Share this Document, прокрутка наверх становится невозможным  
+[видео](https://slepsovasonya.youtrack.cloud/api/files/8-164?sign=MTY5OTY2MDgwMDAwMHwxLTF8OC0xNjR8ZzVMWmI0THJva0R6aUE0VWNCc2RJb0JJNzk1NU5lSzFxbUk5V0d0dlBXaw0K&updated=1698639665490)
+
+**Приоритет:**   
+Серьезная             
+
+**Окружение:**  
+MacOS  
+Браузер: воспроизводится везде  
+***
+</details>
+
+<details>
+<summary> ID: SIGN-2 </summary> 
+
+### Create Folder: папка не появляется в блоке документов, созданная через страницу Documents тег - Received [SIGN-2](https://slepsovasonya.youtrack.cloud/issue/SIGN-2/Create-Folder-papka-ne-poyavlyaetsya-v-bloke-dokumentov-sozdannaya-cherez-stranicu-Documents-teg-Received)
+
+**Предусловия:**  
+1. Открыть сайт https://staging.d2twwklgqmrfet.amplifyapp.com/  
+2. Зарегистрироваться как пользователь на сайте  
+3. Войти в личный кабинет пользователя  
+4. Нажать на вкладку Documents   
+
+**Шаги воспроизведения:**  
+1. Нажать на тег Received на вкладке Documents  
+2. Нажать на кнопку Create Folder на страниц Documents  
+3. Нажать поле New Folder Name в попапе Create Folder  
+4. В поле New Folder Name ввести название папки  
+5. Нажать на кнопку Create в попапе Create Folder  
+
+**Ожидаемый результат:**   
+Папка появляется в блоке документов, созданная на странице Documents Received  
+**Фактический результат:**    
+Папка НЕ появляется в блоке документов, созданная на странице Documents Received (можно посмотреть только через опцию Move to+нет возможности удалить созданные папки)  
+[видео](https://slepsovasonya.youtrack.cloud/api/files/8-166?sign=MTY5OTY2MDgwMDAwMHwxLTF8OC0xNjZ8c1BaY1l0YW9EQ1RGb0NJNlE1b1ZacUlCdkF3enlkam8yU3ctbEJoTWhoSQ0K&updated=1698641311619)
+
+**Приоритет:**   
+Серьезная             
+
+**Окружение:**  
+MacOS  
+Браузер: воспроизводится везде  
+***
+</details>
+
+<details>
+<summary> ID: SIGN-3 </summary> 
+
+### Option Generate Singing Link: Сгенерированная ссылка открывается и подписание возможно инициатором документа [SIGN-3](https://slepsovasonya.youtrack.cloud/issue/SIGN-3/Option-Generate-Singing-Link-Sgenerirovannaya-ssylka-otkryvaetsya-i-podpisanie-vozmozhno-iniciatorom-dokumenta)
+
+**Предусловия:**  
+1. Открыть сайт https://staging.d2twwklgqmrfet.amplifyapp.com/  
+2. Зарегистрироваться как пользователь на сайте  
+3. Войти в личный кабинет пользователя  
+4. Нажать на вкладку Sign  
+5. Отправить документ на подписание  
+
+**Шаги воспроизведения:**  
+1. Нажать на вкладку Documents  
+2. Нажать Option у документа со статусом Awaiting  
+3. Нажать опцию Generate Singing Link  
+4. В попапе Generate Singing Link нажать на кнопку Get Singing Link  
+5. В браузере открыть новую вкладку и вставить ссылку из буфера, нажать Enter  
+6. В открывшейся странице-на странице подписания нажать на место заполнения  
+7. В попапе Choose Signature выбрать подпись  
+8. В попапе Choose Signature нажать на кнопку Sign Now  
+9. На странице подписания нажать на кнопку Send  
+10. В попапе Almost done нажать на кнопку I agree  
+
+**Ожидаемый результат:**  
+Сгенерированная ссылка открывается и подписание возможно только получателем/ями  
+**Фактический результат:**  
+Сгенерированная ссылка открывается и подписание возможно инициатором документа  
+
+**Приоритет:**   
+Критическая             
+
+**Окружение:**  
+MacOS  
+Браузер: воспроизводится везде  
+
+***
+</details>
